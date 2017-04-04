@@ -25,5 +25,8 @@
   <ItemGroup>
     <Compile Include="UseClarionDLL.clw" />
   </ItemGroup>
+  <ItemGroup>
+    <Library Include="ClarionDLL.lib" />
+  </ItemGroup>
   <Import Project="$(ClarionBinPath)\SoftVelocity.Build.Clarion.targets" />
 </Project>

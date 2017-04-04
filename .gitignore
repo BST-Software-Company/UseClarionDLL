@@ -1,0 +1,11 @@
+# Directories
+map/
+obj/
+
+# File Types
+*.exe
+*.dll
+*.cache
+
+# Exclusions
+!ClarionDLL.dll
