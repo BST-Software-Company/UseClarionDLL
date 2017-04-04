@@ -16,4 +16,23 @@
 						END
 					END
 
+intValue            LONG
+doubleValue         REAL
+stringValue         CSTRING(32)
+
 	CODE
+		mySimpleClass# = createSimpleClass()
+		
+		intValue = 123
+		setIntValue(mySimpleClass#, intValue)
+		MESSAGE(getIntValue(mySimpleClass#))
+		
+		doubleValue = 3.14159
+		setDoubleValue(mySimpleClass#, doubleValue)
+		MESSAGE(getDoubleValue(mySimpleClass#))
+		
+		stringValue = 'Hello, World!'
+		setStringValue(mySimpleClass#, stringValue)
+		MESSAGE(getStringValue(mySimpleClass#))
+		
+		deleteSimpleClass(mySimpleClass#)
